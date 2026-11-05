@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreWorld | Travel & Adventure</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Explore<span>World.</span></h2>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="#destinations" class="nav-btn">Explore Now</a>
+            <button class="menu-btn" id="menuBtn">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="tagline">DISCOVER THE WORLD</p>
+            <h1>Explore The World,<br>
+                Create <span>Memories.</span></h1>
+            <p class="hero-text">
+                Travel beyond boundaries and discover beautiful
+                destinations with unforgettable experiences.
+            </p>
+            <a href="#destinations" class="primary-btn">
+                Explore Destinations →
+            </a>
+        </div>
+    </section>
+
+    <!-- Destinations -->
+    <section class="destinations" id="destinations">
+        <div class="section-heading">
+            <p>POPULAR DESTINATIONS</p>
+            <h2>Explore Amazing Places</h2>
+            <span>Find your perfect destination for your next adventure.</span>
+        </div>
+
+        <!-- Search and Filter -->
+        <div class="filter-area">
+            <input type="text" id="searchInput"
+                placeholder="Search destinations...">
+
+            <select id="categoryFilter">
+                <option value="all">All Destinations</option>
+                <option value="beach">Beach</option>
+                <option value="mountain">Mountain</option>
+                <option value="city">City</option>
+            </select>
+        </div>
+
+        <div class="destination-grid" id="destinationGrid">
+
+            <div class="destination-card" data-name="Bali" data-category="beach">
+                <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800" alt="Bali">
+                <div class="card-content">
+                    <div class="card-title">
+                        <h3>Bali, Indonesia</h3>
+                        <span>⭐ 4.9</span>
+                    </div>
+                    <p>🏝️ Tropical Beach Paradise</p>
+                    <p>🕒 5 Days / 4 Nights</p>
+                    <div class="card-bottom">
+                        <h4>₹25,999</h4>
+                        <button class="book-btn" data-place="Bali">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="destination-card" data-name="Switzerland" data-category="mountain">
+                <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=800" alt="Switzerland">
+                <div class="card-content">
+                    <div class="card-title">
+                        <h3>Switzerland</h3>
+                        <span>⭐ 4.8</span>
+                    </div>
+                    <p>🏔️ Beautiful Mountain Views</p>
+                    <p>🕒 7 Days / 6 Nights</p>
+                    <div class="card-bottom">
+                        <h4>₹65,999</h4>
+                        <button class="book-btn" data-place="Switzerland">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="destination-card" data-name="Paris" data-category="city">
+                <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800" alt="Paris">
+                <div class="card-content">
+                    <div class="card-title">
+                        <h3>Paris, France</h3>
+                        <span>⭐ 4.7</span>
+                    </div>
+                    <p>🗼 Romantic City Experience</p>
+                    <p>🕒 4 Days / 3 Nights</p>
+                    <div class="card-bottom">
+                        <h4>₹45,999</h4>
+                        <button class="book-btn" data-place="Paris">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="destination-card" data-name="Maldives" data-category="beach">
+                <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800" alt="Maldives">
+                <div class="card-content">
+                    <div class="card-title">
+                        <h3>Maldives</h3>
+                        <span>⭐ 5.0</span>
+                    </div>
+                    <p>🌊 Luxury Island Escape</p>
+                    <p>🕒 5 Days / 4 Nights</p>
+                    <div class="card-bottom">
+                        <h4>₹39,999</h4>
+                        <button class="book-btn" data-place="Maldives">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="destination-card" data-name="Manali" data-category="mountain">
+                <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800" alt="Manali">
+                <div class="card-content">
+                    <div class="card-title">
+                        <h3>Manali, India</h3>
+                        <span>⭐ 4.8</span>
+                    </div>
+                    <p>❄️ Snowy Mountain Adventure</p>
+                    <p>🕒 4 Days / 3 Nights</p>
+                    <div class="card-bottom">
+                        <h4>₹12,999</h4>
+                        <button class="book-btn" data-place="Manali">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="destination-card" data-name="Dubai" data-category="city">
+                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800" alt="Dubai">
+                <div class="card-content">
+                    <div class="card-title">
+                        <h3>Dubai, UAE</h3>
+                        <span>⭐ 4.9</span>
+                    </div>
+                    <p>🌆 Modern Luxury Destination</p>
+                    <p>🕒 5 Days / 4 Nights</p>
+                    <div class="card-bottom">
+                        <h4>₹35,999</h4>
+                        <button class="book-btn" data-place="Dubai">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <p id="noResults">No destinations found.</p>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <h2>Your Journey, Our Passion!</h2>
+        <p>
+            ExploreWorld helps travelers discover amazing places,
+            plan exciting holidays and create unforgettable memories.
+        </p>
+    </section>
+
+    <!-- Contact -->
+    <footer id="contact">
+        <h2>ExploreWorld.</h2>
+        <p>Your journey begins here.</p>
+        <p>© 2026 ExploreWorld. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
